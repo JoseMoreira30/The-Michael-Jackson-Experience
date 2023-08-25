@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>True/False Quiz</title>
+    <style> 
+   
+  .quiz-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 50px;
+    
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option {
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.option:hover {
+    background-color: #2980b9;
+}
+
+#resultContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: none;
+}
+
+#correctResult {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.start-button:hover {
+    background-color: #2980b9;
+}
+/* Add these styles to your existing CSS */
+
+.dance-gif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Add animation to the GIF */
+
+
+.dance-gif {
+    animation: danceAnimation 3s infinite;
+}
+
+
+
+
+</style>
+</head>
+<body> </body>
+<br>
+<div class="container">
+    <header class="sticky-top">
+        <div class="row flex-nowrap justify-content-between align-items-center"
+            style="background-color: hsl(49, 97%, 69%);">
+            <div class="col text-center">
+                <br>
+                <a href="index.html" id="app-name">
+                    <img src="resources/colLective (3) (1).png" alt="The Michael Jackson Experience Logo" class="logo-image">
+                </a>
+                <br>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand mx-auto" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mx-auto">
+                    <a class="p-2 text-muted scroll-link" href="#about-section">About Us</a>
+                    <a class="p-2 text-muted scroll-link" href="#team-section">Meet the Team</a>
+
+                    
+
+                    <a class="p-2 text-muted" href="forum.html">Forum</a>
+                    <a class="p-2 text-muted" href="selfie.html#selfie">Take a Selfie</a>
+                    <a class="p-2 text-muted" href="quiz.html">Quiz</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </div>
+    
+    <div class="quiz-container">
+        <h1>Test Your Knowledge</h1>
+        <button id="startBtn" class="start-button">Press Start</button>
+        <div class="options" id="optionsContainer" style="display: none;">
+            <!-- Hide initially -->
+            <div id="question"></div>
+            <button class="option" id="option1"></button>
+            <button class="option" id="option2"></button>
+            <button class="option" id="option3"></button>
+            <button class="option" id="option4"></button>
+        </div>
+        <div id="resultContainer">
+            <p id="correctResult"></p>
+            <img src="resources/MJ.gif" alt="Michael Jackson Dance" class="dance-gif">
+        </div>
+        
+    
+
+    <script src="quiz-stuff.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesforum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <br>
+    <div class="container">
+        <header class="sticky-top">
+            <div class="row flex-nowrap justify-content-between align-items-center"
+                style="background-color: hsl(49, 97%, 69%);">
+                <div class="col text-center">
+                    <br>
+                    <a href="index.html" id="app-name">
+                        <img src="resources/colLective (3) (1).png" alt="The Michael Jackson Experience Logo" class="logo-image">
+                    </a>
+                    <br>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand mx-auto" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav mx-auto">
+                        <a class="p-2 text-muted scroll-link" href="#about-section">About Us</a>
+                        <a class="p-2 text-muted scroll-link" href="#team-section">Meet the Team</a>
+
+                        
+
+                        <a class="p-2 text-muted" href="forum.html">Forum</a>
+                        <a class="p-2 text-muted" href="selfie.html">Take a Selfie</a>
+                        <a class="p-2 text-muted" href="quiz.html">Quiz</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        
+   
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-primary nav-link" id="create-post-button">Create Post</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger nav-link" id="logout-button">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-4" id="app"></div>
+    <div class="container mt-4" id="logout-container"></div>
+    <div class="container mt-4" id="login-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
